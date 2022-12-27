@@ -12,7 +12,7 @@ export default function getTransactions() {
     let response;
     async function getData() {
       response = await axios.get('http://layer2nfts.org', {
-        params: { 0x844d982FDc1F5C8eaD82E95d522F2486a7CBb3EE, optimism },
+        params: { address, optimism },
       });
       console.log(response);
       setTxs(response.data.result);
