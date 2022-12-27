@@ -6,12 +6,12 @@ import styles from "../styles/Home.module.css";
 export default function getTransactions() {
   const [txs, setTxs] = useState([]);
   const { address } = useAccount();
-  const chain = "optimism";
+  const chain = "10";
 
   useEffect(() => {
     let response;
     async function getData() {
-      response = await axios.get('http://layer2nfts.org', {
+      response = await axios.get('http://layer2nfts.org/gettxs', {
         params: { address, optimism },
       });
       console.log(response);

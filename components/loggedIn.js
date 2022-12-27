@@ -55,7 +55,7 @@ export default function LoggedIn() {
                   <section className={styles.resultContainer_data}>
                     <p>From: {streams.fromAddress}</p>
                     <p>To: {streams.toAddress}</p>
-                    <p>Value: {streams.value / 1e18} Optimism </p>
+                    <p>Value: {streams.value / 1e18} ETH </p>
                   </section>
                 </section>
               );
