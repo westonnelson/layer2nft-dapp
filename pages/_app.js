@@ -1,7 +1,7 @@
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { mainnet, polygon, goerli, optimism } from "wagmi/chains";
+import { optimism } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
 const { chains, provider } = configureChains(
@@ -9,7 +9,7 @@ const { chains, provider } = configureChains(
   [publicProvider()]
 );
 const { connectors } = getDefaultWallets({
-  appName: "Firebase Web3 Wallet Tracker",
+  appName: "Layer2 NFTs and Domains",
   chains,
 });
 const wagmiClient = createClient({
