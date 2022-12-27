@@ -1,8 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-
 import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -38,5 +33,3 @@ export default function Home() {
     </section>
   );
 }
-
-const inter = Inter({ subsets: ['latin'] })
